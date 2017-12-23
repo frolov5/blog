@@ -313,7 +313,7 @@ h2.namе-group{
 	-moz-box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
 	box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
 }
-.block-list-item-post {padding:15px;st}
+.block-list-item-post {padding:15px;}
 .block h3 {
 	border-bottom: 2px solid #f0f0f0;
 	margin-top: 0; padding:0 0 10px 0;
@@ -341,6 +341,7 @@ h2.namе-group{
 	padding: 0;
 	list-style: none;
 }
+.block-list-item-questions {margin-top:15px;}
 .crumbs {
 	background-color: #f5f5f5;
 	padding: 10px 0 10px 0;
