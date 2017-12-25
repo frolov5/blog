@@ -34,7 +34,7 @@ $(this).css('border', '2px solid ' + colors[rand]);
 $(document).ready(function(){
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 10000) {
+        if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
         } else {
             $('.scrollup').fadeOut();
