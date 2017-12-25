@@ -65,6 +65,7 @@ $(document).ready(function(){
 
     $(".block-comments-show").on("click", function() {
         $(".block-comments-hide").toggle();
+        $(".block-comments-show").css('display', 'none');
     });
 
 });
