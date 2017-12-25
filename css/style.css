@@ -352,6 +352,7 @@ h2.namе-group{
 	padding: 10px 0 10px 0;
 }
 .inline-block-item {margin: 8px 8px 0 0;}
+.inline-block-item:first-child {padding-left: .5em;}
 .inline-block-breadcrumb {
 	margin: 0 .5em 0 0;
 	color: #545454;
@@ -374,11 +375,7 @@ h2.namе-group{
 	padding-right: 5px;
 	color: #545454;
 }
-.body-post-text br+img {
-	margin: 0;
-}
 .body-post-text img {
-	margin: 0;
 	vertical-align: middle;
 }
 .body-post-text img[align=left] {
