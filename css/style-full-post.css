@@ -7,6 +7,23 @@
     text-transform: none;
     border-bottom: none;
 }
+/* Форма подачи комментария */
+.comments .form-group .form-control {
+    font-size: 16px;
+    line-height: 1.56;
+    color: #545454;
+}
+.comments .form-group .form-control:focus {
+    border-color: rgba(70,182,144,0.5);
+    outline: none;
+    -webkit-box-shadow: 0 0 4px 0 rgba(70,182,144,1);
+    -moz-box-shadow: 0 0 4px 0 rgba(70,182,144,1);
+    box-shadow: 0 0 4px 0 rgba(70,182,144,1);
+}
+.comments .form-group .footer-comment {
+    text-align: right;
+    margin-top: 20px;
+}
 /* Автарка комментария */
 .comments .img-thumbnail {
     border: none;
@@ -29,13 +46,6 @@
 .comments .post_statistics:first-child {margin-left: 0;}
 .comments .post_statistics a {color: #545454;}
 .comments .post_statistics a:hover {color:#46b690;}
-/* Текст комментария */
-.comments .media-text {
-    text-indent: 25px;
-    line-height: 1.5em;
-    margin-bottom: 0.25rem;
-    font-size: 20px;
-}
 /* Кнопка ответить*/
 .comments .btn-default {
     color: #545454;

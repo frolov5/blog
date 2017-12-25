@@ -8,28 +8,6 @@ body{
 	margin: 0;
 }
 a, a:hover,a:link, a:visited{text-decoration:none !important;}
-
-/*
-.left{float:left;}
-.right{float:right;}
-.right-block{float: right!important;}
-.left-block{float: left!important;}
-.right-text{text-align:right;}
-.left-text {text-align: left;}
-.margin {margin-right: 5%;}
-.clearfix:before,
-.clearfix:after,
-.clearfix{
-	content:"";
-	display:table;
-
-}
-.clear {clear: both;}
-.center{text-align:center;margin:0 auto;}
-.uppercase {text-transform: uppercase;}
-.capitalize {text-transform: capitalize;}
-.justify {text-align: justify; text-align-last: justify;}
-*/
 #wrapper{
 	height:100%;
 	position: relative;
@@ -374,6 +352,12 @@ h2.namе-group{
 	margin-right: -5px;
 	padding-right: 5px;
 	color: #545454;
+}
+.media-text {
+	text-indent: 25px;
+	line-height: 1.5em;
+	margin-bottom: 0.25rem;
+	font-size: 16px;
 }
 .body-post-text img {
 	vertical-align: middle;
