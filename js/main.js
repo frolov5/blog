@@ -34,7 +34,7 @@ $(this).css('border', '2px solid ' + colors[rand]);
 $(document).ready(function(){
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 10000) {
             $('.scrollup').fadeIn();
         } else {
             $('.scrollup').fadeOut();
@@ -44,6 +44,14 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var elem = $('.category-block');
         if ($(this).scrollTop() > 300) {
+            elem.addClass('fixed-category-block');
+        }else {
+            elem.removeClass('fixed-category-block');
+        }
+    });
+    $(window).scroll(function(){
+        var elem = $('.category-block-full');
+        if ($(this).scrollTop() > 100) {
             elem.addClass('fixed-category-block');
         }else {
             elem.removeClass('fixed-category-block');
