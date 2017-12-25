@@ -63,6 +63,10 @@ $(document).ready(function(){
         return false;
     });
 
+    $(".block-comments-show").on("click", function() {
+        $(".block-comments-hide").toggle();
+    });
+
 });
 
 $(document).ready(function(){
