@@ -456,7 +456,7 @@ h2.namе-group{
 	opacity:0.3;
 	position:fixed;
 	bottom:250px;
-	right:8px;
+	left:35px;
 	display:none;
 	text-indent:-9999px;
 	background: url(../img/icon_top.png) no-repeat;
