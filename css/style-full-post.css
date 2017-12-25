@@ -13,7 +13,7 @@
     line-height: 1.56;
     color: #545454;
 }
-.comments .form-group .form-control:focus {
+.form-control:focus {
     border-color: rgba(70,182,144,0.5);
     outline: none;
     -webkit-box-shadow: 0 0 4px 0 rgba(70,182,144,1);
@@ -60,6 +60,10 @@
 }
 .comments .btn:hover{background: #f5f5f5; color:#46b690;}
 .comments .btn:active{border: none;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+    outline-offset: 0;
+}
 /*Должны авторизоваться*/
 .not-authorized {
     color: #545454;
@@ -76,3 +80,5 @@
     border-radius: 15px!important;
     border: 2px solid #e09696;
 }
+/*Поле ввода комментария*/
+.block-comments-hide {display: none;}
