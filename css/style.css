@@ -460,11 +460,5 @@ h2.namе-group{
 	text-indent:-9999px;
 	background: url(../img/icon_top.png) no-repeat;
 }
-
-.like-active{
-	color: #46b690!important;
-}
-
-.info-active{
-	color: #46b690!important;
-}
+.like-active{color: #46b690!important;}
+.info-active{color: #46b690!important;}
