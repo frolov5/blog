@@ -1,0 +1,54 @@
+/* ВКЛАДКИ*/
+.row-tabs {padding-right: 30px;}
+.tabs {
+    background: #4c6989;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.tab-content-hidden {
+    display: none;
+    background: #fff;
+}
+.tab-content-active{
+    display: block;
+}
+.tabs > input {
+    display: none;
+    position: absolute;
+}
+.tabs > label {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size:12px;
+    color: #ddd;
+    border: 2px solid #46b690;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -o-border-radius:15px;
+    border-radius:15px;
+    background:#4c6989;
+    font-weight:600;
+}
+.tabs > label span{padding-right:5px;}
+.tabs > label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.tabs > label:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.tabs > input:checked + label {
+    color: #fff;
+    border-top: 2px solid #46b690;
+    /*border-bottom: 1px solid #fff;*/
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -o-border-radius:15px;
+    border-radius:15px;
+    background: #46b690;
+    font-weight:600;
+}

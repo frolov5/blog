@@ -278,7 +278,7 @@ h2.namе-group{
 	position: relative;
 	box-sizing: border-box;
 	margin-top: 15px;
-	padding: 10px 0 14px;
+	padding-top: 10px;
 	transition: box-shadow 150ms linear;
 	box-shadow: 0 1px 3px rgba(0,0,0,.28);
 }
@@ -460,11 +460,5 @@ h2.namе-group{
 	text-indent:-9999px;
 	background: url(../img/icon_top.png) no-repeat;
 }
-
-.like-active{
-	color: #46b690!important;
-}
-
-.info-active{
-	color: #46b690!important;
-}
+.like-active{color: #46b690!important;}
+.info-active{color: #46b690!important;}
