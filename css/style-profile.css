@@ -87,7 +87,7 @@
 .link-ava:nth-child(4) {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
 .link-ava a {color: #fff;font-size: 16px;letter-spacing: 1px;}
 .link-ava a:hover {color: #46b690;}
-/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .rg-profile {
     margin: 20px 0 40px 0;
     background: rgb(70, 179, 148);
@@ -207,3 +207,25 @@
 }
 .category-profile .btn-primary:hover {background: #5a7ca2!important;outline: none!important;}
 .category-profile .btn-primary:active {background: #537396!important;outline: none!important;}
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
+.body-list {margin: 50px 50px 0 50px;}
+.block-list-item {padding-bottom: 10px;}
+.block-review-header {color: #000;}
+.crumbs {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.breadcrumb-link {color: #000;}
+.body-post-text {color: #000;font-size: 14px;}
+.media-text {font-size: 14px;}
+.read_more a {color: #000;font-size: 14px;}
+.statistics {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.statistics a {color: #000;font-size: 14px;}
