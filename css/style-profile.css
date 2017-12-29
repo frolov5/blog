@@ -229,3 +229,9 @@
     font-size: 14px;
 }
 .statistics a {color: #000;font-size: 14px;}
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 4 ВКЛАДКА */
+.edit {text-align: right;}
+.edit .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
