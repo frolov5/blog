@@ -242,8 +242,13 @@
     margin: 0;
     width: 50px;
 }
-.author {margin-left: 10px;margin-bottom: 5px;color: #000;}
+.author {margin-left: 10px;margin-bottom: 5px;color: #000;font-weight: bold;}
 .metadata {color: #000;}
 .post_statistics a {color: #000;}
 .post_statistics a:hover {color: #fff;}
 .media-text {color: #000;}
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 5 ВКЛАДКА */
+.comments h3 {
+    color: #000;
+    text-align: left;
+}
