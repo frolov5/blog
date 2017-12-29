@@ -235,3 +235,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 5 ВКЛАДКА */
+.comments {margin: 20px 0 20px 0;}
+.comments .img-thumbnail {
+    border: none;
+    margin: 0;
+    width: 50px;
+}
+.author {margin-left: 10px;margin-bottom: 5px;color: #000;}
+.metadata {color: #000;}
+.post_statistics a {color: #000;}
+.post_statistics a:hover {color: #fff;}
+.media-text {color: #000;}
