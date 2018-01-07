@@ -53,6 +53,14 @@ $(document).ready(function () {
         $(".cat-third").hide();
         $(id).slideToggle();
     });
+    /*скрываем-показываем поля на 4 вкладке*/
+    $(".cat-fourth").hide()
+    $("#category_1_1_1").show();
+    $("a.category_1_1_1, a.category_n_n_n").on("click", function () {
+        var id = $(this).attr('href');
+        $(".cat-fourth").hide();
+        $(id).slideToggle();
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
