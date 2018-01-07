@@ -1,11 +1,29 @@
 * {outline: none;}
 /* ВКЛАДКИ*/
 .row-tabs {padding-right: 30px;}
-.tabs {
+/*.tabs {
     background: #4c6989;
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
+}*/
+.col-tabs {
+    float: right;
+    width: 100%;
+    padding-left: 320px;
+}
+.tabs {
+    padding: 0 5px 0 5px;
+    background: rgb(70, 179, 148);
+    background: -webkit-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
+    background: -o-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
+    background: linear-gradient(100deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
+    display: flex;
+    justify-content: space-between;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 .tab-content-hidden {
     display: none;
@@ -20,16 +38,16 @@
 }
 .tabs > label {
     display: inline-block;
-    margin: 15px 0;
+    margin: 5px 0;
     padding: 10px 20px;
-    font-size:12px;
+    font-size:13px;
     color: #ddd;
-    border: 2px solid #46b690;
+    border: 2px solid #374c63;
+    background: #4c6989;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     -o-border-radius:15px;
     border-radius:15px;
-    background:#4c6989;
     font-weight:600;
 }
 .tabs > label span{padding-right:5px;}
@@ -44,19 +62,18 @@
 }
 .tabs > input:checked + label {
     color: #fff;
-    border-top: 2px solid #46b690;
+    border-top: 2px solid #374c63;
     /*border-bottom: 1px solid #fff;*/
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     -o-border-radius:15px;
     border-radius:15px;
-    background: #46b690;
+    background: #374c63;
     font-weight:600;
 }
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
     position: relative;
-    margin-top: 20px;
     margin-bottom: 20px;
     background:#4c6989;
     -moz-border-radius-topright: 90px;
@@ -87,7 +104,7 @@
 .link-ava a:hover {color: #46b690;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {margin: 20px 0 0 0;}
-.profile-input{margin: 20px 0 40px 0;}
+.profile-input{margin: 20px 0 20px 0;}
 .rg-profile {
     background: rgb(70, 179, 148);
     background: -webkit-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
@@ -96,7 +113,7 @@
 }
 .uppercase {text-transform: uppercase;}
 /* ПОДСКАЗКА */
-.prompt {height: 245px;}
+.prompt {height: 100px;}
 /* ОПИСАНИЕ РАЗДЕЛА*/
 .category-profile form {margin: 0 150px 0 150px; padding: 50px 0 50px 0;}
 .form-group {margin-top: 30px;}
