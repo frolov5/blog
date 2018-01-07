@@ -255,6 +255,7 @@
     display:none; /* в oбычнoм сoстoянии её нет) */
 }
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
+.profile-records {margin: 20px 0 40px 0;}
 .body-list {margin: 0 50px 0 50px; padding: 50px 0 50px 0;}
 .block-list-item {margin-top: 0; padding-bottom: 10px;}
 .block-review-header {color: #000;}

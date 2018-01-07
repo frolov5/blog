@@ -10,11 +10,12 @@ $(document).ready(function () {
         $('#' + id).addClass('tab-content-active');
         return false;
     });
-    $(".category-profile").hide();
+    /*скрываем-показываем поля на 1 вкладке*/
+    $(".cat-first").hide();
     $("#main").show();
     $("a.main, a.education, a.work, a.skill, a.about").on("click", function () {
         var id = $(this).attr('href');
-        $(".category-profile").hide();
+        $(".cat-first").hide();
         $(id).slideToggle();
     });
     $('#change-password').click( function(event){ // лoвим клик пo ссылки с id="go"
@@ -35,6 +36,14 @@ $(document).ready(function () {
                     $('#overlay').fadeOut(400); // скрывaем пoдлoжку
                 }
             );
+    });
+    /*скрываем-показываем поля на 2 вкладке*/
+    $(".cat-second").hide()
+    $("#category_1").show();
+    $("a.category_1, a.category_n").on("click", function () {
+        var id = $(this).attr('href');
+        $(".cat-second").hide();
+        $(id).slideToggle();
     });
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
