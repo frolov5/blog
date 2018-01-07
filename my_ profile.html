@@ -54,7 +54,7 @@
                                     <a href="#" class="refresh-ava">Обновить фото</a>
                                 </div>
                                 <div class="link-ava">
-                                    <a href="#basic" class="basic">Основное</a>
+                                    <a href="#main" class="main">Основное</a>
                                 </div>
                                 <div class="link-ava">
                                     <a href="#education" class="education">Образование</a>
@@ -66,7 +66,7 @@
                                     <a href="#skill" class="skill">Навыки</a>
                                 </div>
                                 <div class="link-ava">
-                                    <a href="#about_me" class="about_me">О себе</a>
+                                    <a href="#about" class="about">О себе</a>
                                 </div>
                                 <div class="link-ava">
                                     <a href="#" class="profile">Статистика</a>
@@ -75,9 +75,14 @@
                         </div>
                     </div>
                     <div class="col-9">
-                        <div class="rg-profile uppercase">
-                            <div class="category-profile">
-                                <form action="#" id="basic" class="form-active" method="post">
+                        <div class="rg-profile profile-prompt">
+                            <div class="prompt"></div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="rg-profile profile-input">
+                            <div class="category-profile" id="main">
+                                <form action="#"  class="form-active" method="post">
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="login"
                                                placeholder="Логин :">
@@ -107,12 +112,37 @@
                                                placeholder="Город :">
                                     </div>
                                     <div class="button">
-                                        <input type="button" class="uppercase btn btn-primary" value="Сохранить">
+                                        <input type="button" id="change-password" class="btn btn-primary"
+                                               value="Изменить пароль">
+                                        <input type="button" class="btn btn-primary" value="Сохранить">
                                     </div>
+                                    <div id="modal_form">
+                                        <span id="modal_close">X</span>
+                                            <h2 class="confirm-password">Смена пароля</h2>
+                                            <form action="#" method="post">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="old-password"
+                                                           placeholder="Старый пароль :">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="new-password"
+                                                           placeholder="Новый пароль :">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" id="confirm-password"
+                                                           placeholder="Повторите пароль :">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="button" id="modal_button" class="btn btn-primary"
+                                                           value="Сохранить">
+                                                </div>
+                                            </form>
+                                    </div>
+                                    <div id="overlay"></div>
                                 </form>
                             </div>
-                            <div class="category-profile first">
-                                <form action="#" id="education" method="post">
+                            <div class="category-profile" id="education">
+                                <form action="#" id="education-form" method="post">
                                     <select id="select">
                                         <option>Высшее</option>
                                         <option>Неоконченное высшее</option>
@@ -132,13 +162,13 @@
                                                placeholder="Город :">
                                     </div>
                                     <div class="button">
-                                        <input type="button" class="uppercase btn btn-primary" value="+">
-                                        <input type="button" class="uppercase btn btn-primary" value="Сохранить">
+                                        <input type="button" class="btn btn-primary" value="+">
+                                        <input type="button" class="btn btn-primary" value="Сохранить">
                                     </div>
                                 </form>
                             </div>
-                            <div class="category-profile first">
-                                <form action="#" id="work" method="post">
+                            <div class="category-profile" id="work">
+                                <form action="#" method="post">
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="company_name"
                                                placeholder="Название компании :">
@@ -156,32 +186,32 @@
                                                placeholder="Сфера деятельности :">
                                     </div>
                                     <div class="button">
-                                        <input type="button" class="uppercase btn btn-primary" value="+">
-                                        <input type="button" class="uppercase btn btn-primary" value="Сохранить">
+                                        <input type="button" class="btn btn-primary" value="+">
+                                        <input type="button" class="btn btn-primary" value="Сохранить">
                                     </div>
                                 </form>
                             </div>
-                            <div class="category-profile first">
-                                <form action="#" id="skill" method="post">
+                            <div class="category-profile" id="skill">
+                                <form action="#" method="post">
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="skill_1"
                                                placeholder="Навык :">
                                     </div>
                                     <div class="button">
-                                        <input type="button" class="uppercase btn btn-primary" value="+">
-                                        <input type="button" class="uppercase btn btn-primary" value="Сохранить">
+                                        <input type="button" class="btn btn-primary" value="+">
+                                        <input type="button" class="btn btn-primary" value="Сохранить">
                                     </div>
                                 </form>
                             </div>
-                            <div class="category-profile first">
-                                <form action="#" id="about_me" method="post">
+                            <div class="category-profile" id="about">
+                                <form action="#"  method="post">
                                     <div class="form-group">
                                         <textarea class="form-control" id="about_me_1" placeholder="О себе :"
                                                   cols="30" rows="10"></textarea>
                                     </div>
                                     <div class="button">
-                                        <input type="button" class="uppercase btn btn-primary" value="+">
-                                        <input type="button" class="uppercase btn btn-primary" value="Сохранить">
+                                        <input type="button" class="btn btn-primary" value="+">
+                                        <input type="button" class="btn btn-primary" value="Сохранить">
                                     </div>
                                 </form>
                             </div>
@@ -199,7 +229,10 @@
                                     <a href="#" class="refresh-ava uppercase">Обновить фото</a>
                                 </div>
                                 <div class="link-ava">
-                                    <a href="#" class="refresh-login uppercase">логин</a>
+                                    <a href="#" class="category_1 uppercase">Категория 1</a>
+                                </div>
+                                <div class="link-ava">
+                                    <a href="#" class="category_n uppercase">Категория n</a>
                                 </div>
                                 <div class="link-ava">
                                     <a href="#" class="view-statistics uppercase">Статистика</a>
@@ -210,8 +243,7 @@
                     <div class="col-9">
                         <div class="rg-profile uppercase">
                             <div class="category-profile">
-                                <h3 class="caption">Категория 1</h3>
-                                <div class="body-list">
+                                <div id="category_1" class="body-list body-active">
                                     <article class="block-list-article block-list-item block block-review">
                                         <h3><a href="#" class="block-review-header">Заголовок поста</a></h3>
                                         <ul class="crumbs inline-block">
@@ -303,8 +335,7 @@
                                 </div>
                             </div>
                             <div class="category-profile">
-                                <h3 class="caption">Категория 2</h3>
-                                <div class="body-list">
+                                <div id="category_n" class="body-list">
                                     <article class="block-list-article block-list-item block block-review">
                                         <h3><a href="#" class="block-review-header">Заголовок поста</a></h3>
                                         <ul class="crumbs inline-block">

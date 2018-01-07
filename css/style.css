@@ -8,6 +8,7 @@ body{
 	margin: 0;
 }
 a, a:hover,a:link, a:visited{text-decoration:none !important;}
+textarea {resize: none;}
 #wrapper{
 	min-height:100%;
 	position: relative;
