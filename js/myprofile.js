@@ -69,6 +69,14 @@ $(document).ready(function () {
         $(".cat-fifth").hide();
         $(id).slideToggle();
     });
+    /*скрываем-показываем поля на 6 вкладке*/
+    $(".cat-sixth").hide()
+    $("#category_1_1_1_1_1").show();
+    $("a.category_1_1_1_1_1, a.category_n_n_n_n_n").on("click", function () {
+        var id = $(this).attr('href');
+        $(".cat-sixth").hide();
+        $(id).slideToggle();
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
