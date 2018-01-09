@@ -37,6 +37,10 @@ $(document).ready(function () {
                 }
             );
     });
+    $(".menu-main a").on("click", function () {
+        $(".menu-main a").removeClass('current');
+        $(this).parent().children(" a ").addClass('current');
+    })
     /*скрываем-показываем поля на 2 вкладке*/
     $(".cat-second").hide()
     $("#category_1").show();

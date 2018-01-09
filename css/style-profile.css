@@ -1,14 +1,10 @@
 * {outline: none;}
+.clearfix {clear: both;}
+.col-pad {margin-top: 20px;}
 /* ВКЛАДКИ*/
 .row-tabs {padding-right: 30px;}
-/*.tabs {
-    background: #4c6989;
-    padding: 0 20px 0 20px;
-    display: flex;
-    justify-content: space-between;
-}*/
 .col-tabs {
-    float: right;
+    float: left;
     width: 100%;
     padding-left: 320px;
 }
@@ -20,10 +16,6 @@
     background: linear-gradient(100deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
     display: flex;
     justify-content: space-between;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -o-border-radius: 20px 20px 20px 20px;
-    border-radius: 20px 20px 20px 20px;
 }
 .tab-content-hidden {
     display: none;
@@ -32,50 +24,29 @@
 .tab-content-active{
     display: block;
 }
-.tabs > input {
+.link-ava > input {
     display: none;
     position: absolute;
 }
-.tabs > label {
-    display: inline-block;
-    margin: 5px 0;
-    padding: 10px 20px;
-    font-size:13px;
-    color: #ddd;
-    border: 2px solid #374c63;
-    background: #4c6989;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    -o-border-radius:15px;
-    border-radius:15px;
-    font-weight:600;
+.link-ava > label {
+    font-size:14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #fff;
 }
-.tabs > label span{padding-right:5px;}
-.tabs > label:before {
+/*.link-ava > label:before {
     font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
-}
-.tabs > label:hover {
-    color: #fff;
-    cursor: pointer;
-}
-.tabs > input:checked + label {
-    color: #fff;
-    border-top: 2px solid #374c63;
-    /*border-bottom: 1px solid #fff;*/
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    -o-border-radius:15px;
-    border-radius:15px;
-    background: #374c63;
-    font-weight:600;
+}*/
+.link-ava > label:hover {color: #46b690;  cursor: pointer;}
+.link-ava > input:checked + label {
 }
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
     position: relative;
     margin-bottom: 20px;
-    background:#4c6989;
+    background: #4c6989;
     -moz-border-radius-topright: 90px;
     -webkit-border-top-right-radius: 90px;
     border-top-right-radius: 90px;
@@ -104,7 +75,7 @@
 .link-ava a:hover {color: #46b690;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {margin: 20px 0 0 0;}
-.profile-input{margin: 20px 0 20px 0;}
+.profile-input{margin: 0 0 20px 0;}
 .rg-profile {
     background: rgb(70, 179, 148);
     background: -webkit-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
@@ -114,8 +85,61 @@
 .uppercase {text-transform: uppercase;}
 /* ПОДСКАЗКА */
 .prompt {height: 100px;}
+.menu-main {
+    list-style: none;
+    margin: 30px 0 30px 30px;
+    padding: 5px 0 5px;
+    border: 1px solid #fff;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+/*.menu-main li:after, .menu-main li:before  {
+    content: "|";
+    color: #fff;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}*/
+.menu-main li {margin: 20px 0 20px 50px;}
+.menu-main a {
+    margin-bottom: 50px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 14px;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #fff;}
+.menu-main a.current, .menu-main a:hover {color: #4c6989;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #4c6989;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main a.current:before {left: 0;}
+.menu-main a:hover:after, .menu-main a.current:after {right: 0;}
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
 /* ОПИСАНИЕ РАЗДЕЛА*/
-.category-profile form {margin: 0 150px 0 150px; padding: 50px 0 50px 0;}
+.category-profile form {
+    padding: 30px 0 30px 50px;
+    width: 80%;
+}
 .form-group {margin-top: 30px;}
 .form-group:first-child {margin-top: 0;}
 .form-group:last-child {margin-bottom: 0;}
