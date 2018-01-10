@@ -13,7 +13,7 @@ $(document).ready(function () {
     /*скрываем-показываем поля на 1 вкладке*/
     $(".cat-first").hide();
     $("#main").show();
-    $("a.main, a.education, a.work, a.skill, a.about").on("click", function () {
+    $("a.main-link, a.education-link, a.work-link, a.skill-link, a.about-link").on("click", function () {
         var id = $(this).attr('href');
         $(".cat-first").hide();
         $(id).slideToggle();
@@ -41,6 +41,16 @@ $(document).ready(function () {
         $(".menu-main a").removeClass('current');
         $(this).parent().children(" a ").addClass('current');
     })
+    /*добавляем поле Навык при клике на кнопку + */
+    $('#add-skill').on("click", function() {
+        $('<input type="text" class="form-control skill-input" name="skill[]" placeholder="Навык :"/>').fadeIn('slow').appendTo('.skill');
+    });
+    $('#del-skill').on("click", function() {
+        var i = $('.skill-input').length;
+        if (i > 1) {$('.skill-input:last').remove();}
+    });
+    /*добавляем поля Образования при клике на кнопку + */
+
     /*скрываем-показываем поля на 2 вкладке*/
     $(".cat-second").hide()
     $("#category_1").show();

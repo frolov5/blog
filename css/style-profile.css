@@ -156,6 +156,8 @@
     border-radius: 15px 15px 15px 15px;
     outline: none;
 }
+.skill .skill-input {margin-top: 30px}
+.skill .skill-input:first-child {margin-top: 0;}
 .form-group input::-webkit-input-placeholder {color:#fff;}
 .form-group input::-moz-placeholder          {color:#fff;}
 .form-group input:-ms-input-placeholder      {color:#fff;}
@@ -231,6 +233,7 @@
 /* Стилизация кнопки */
 .category-profile .button {text-align: right;}
 .category-profile .btn {margin-top: 30px;}
+.minus {padding: 6px 14px;}
 .category-profile .btn-primary {
     background: #4c6989!important;
     border-color: #374c63!important;
@@ -309,6 +312,7 @@
     -o-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
 }
+.block-list-item:hover {box-shadow: none;}
 .block-review-header {color: #fff;}
 .block-review-header:hover {color: #fff;}
 .block-review-header:visited {color: #fff;}
@@ -343,7 +347,7 @@
     margin: 0;
     width: 50px;
 }
-.author {margin-left: 10px;margin-bottom: 5px;color: #000;font-weight: bold;}
+.author {margin-left: 10px;margin-bottom: 5px;color: #fff;font-weight: normal;}
 .metadata {color: #000;}
 .post_statistics a {color: #000;}
 .post_statistics a:hover {color: #fff;}
