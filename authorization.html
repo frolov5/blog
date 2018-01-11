@@ -32,19 +32,23 @@
                         <h2 class="center uppercase">Авторизация</h2>
                         <form action="#" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="login"
+                                <input type="text" class="form-control" name="login"
                                        placeholder="Логин :">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password"
+                                <input type="password" class="form-control" name="password[]"
                                        placeholder="Пароль :">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password[]"
+                                       placeholder="Повторите пароль :">
                             </div>
                             <div class="button-ready">
                                 <input type="submit" class="ready" value="Войти">
                             </div>
                             <div class="registration-footer">
                                 <div class="registration-footer-link">
-                                    <a href="javascript: void 0">Не зарегистрированы ? Регистрация !</a>
+                                    <a href="registration.html">Не зарегистрированы ? Регистрация !</a>
                                 </div>
                                 <p class="alternative">Или</p>
                                 <div class="social">
@@ -52,7 +56,10 @@
                                         <img src="img/f.png" alt="f">
                                     </a>
                                     <a href="javascript: void 0">
-                                        <img src="img/vk.png" alt="f">
+                                        <img src="img/t.png" alt="f">
+                                    </a>
+                                    <a href="javascript: void 0">
+                                        <img src="img/v.png" alt="f">
                                     </a>
                                     <a href="javascript: void 0">
                                         <img src="img/g.png" alt="f">
