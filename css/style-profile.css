@@ -2,7 +2,12 @@
 .clearfix {clear: both;}
 .col-pad {margin-top: 20px;}
 /* ВКЛАДКИ*/
-.row-tabs {padding-right: 30px;}
+/*.row-tabs {
+    clear: left;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1100px;
+}*/
 .col-tabs {
     float: left;
     width: 100%;
