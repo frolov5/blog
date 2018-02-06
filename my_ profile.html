@@ -84,7 +84,7 @@
                                         <li><a href="#skill" class="skill-link">Навыки</a></li>
                                         <li><a href="#about" class="about-link">О себе</a></li>
                                         <li><a href="#" class="statistic-link">Статистика</a></li>
-                                        <li><a href="#" id="change-password-link">Изменить пароль</a></li>
+                                        <li><a href="#" class="change-password" data-toggle="modal" data-target="#myModal">Изменить пароль</a></li>
                                         <li><a href="#" class="profile-link">Изменить фото</a></li>
                                     </ul>
                                 </div>
@@ -207,29 +207,59 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div id="modal_form">
-                                    <span id="modal_close">X</span>
-                                    <h2 class="confirm-password">Смена пароля</h2>
-                                    <form action="#" method="post">
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" name="old-password"
-                                                   placeholder="Старый пароль :">
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h2 class="confirm-password">Смена пароля</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#" method="post">
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" name="old-password"
+                                                               placeholder="Старый пароль :">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" name="new-password"
+                                                               placeholder="Новый пароль :">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" name="confirm-password"
+                                                               placeholder="Повторите пароль :">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="button" id="modal_button" class="btn btn-primary"
+                                                               value="Сохранить">
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" name="new-password"
-                                                   placeholder="Новый пароль :">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" name="confirm-password"
-                                                   placeholder="Повторите пароль :">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="button" id="modal_button" class="btn btn-primary"
-                                                   value="Сохранить">
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
-                                <div id="overlay"></div>
+                                <!--<div id="modal_form">
+                                        <span id="modal_close">X</span>
+                                        <h2 class="confirm-password">Смена пароля</h2>
+                                        <form action="#" method="post">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="old-password"
+                                                       placeholder="Старый пароль :">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="new-password"
+                                                       placeholder="Новый пароль :">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" name="confirm-password"
+                                                       placeholder="Повторите пароль :">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="button" id="modal_button" class="btn btn-primary"
+                                                       value="Сохранить">
+                                            </div>
+                                        </form>
+                                    </div>
+                                <div id="overlay"></div>-->
                             </div>
                         </div>
                     </div>
