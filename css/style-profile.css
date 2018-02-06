@@ -142,12 +142,33 @@
 }
 /* ОПИСАНИЕ РАЗДЕЛА*/
 .category-profile form {
-    padding: 50px 0 30px 50px;
-    width: 80%;
+    padding: 50px 50px 30px 50px;
 }
 .form-group {margin-top: 30px;}
 .form-group:first-child {margin-top: 0;}
 .form-group:last-child {margin-bottom: 0;}
+/* flash-сообщения */
+.cat-first {position: relative;}
+.updated {
+    top: 7px;
+    left: 22px;
+    position: absolute;
+    background: #def0d8;
+    color: #48725c;
+    padding: 10px 0 10px 10px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+.updated p {margin: 0;display: inline-block;}
+.updated span {
+    padding: 10px 10px 10px 5px;
+    cursor: pointer;
+    opacity:0.5;
+    -moz-opacity:0.5;
+    filter:alpha(opacity=50);
+}
 /* Стилизация инпутов */
 .form-group input,.form-group textarea {
     background: none;
