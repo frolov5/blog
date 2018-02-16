@@ -202,6 +202,54 @@ textarea {resize: none;}
 	position: fixed;
 	width: 300px;
 }
+
+.category-block-header {
+	margin: 0 20px;
+	border-bottom: 1px solid #46b690;
+}
+.category-block-header h3 {
+	margin: 0;
+	padding: 15px 0 15px 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #333;
+}
+.category-block-content {padding: 0 20px;}
+.tab {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 0 5px 0;
+	list-style: none;
+}
+.tab-menu {
+	border-bottom: 1px solid #46b690;
+}
+.tab-menu:last-child {
+	border: none;
+}
+.tab-link {
+	text-decoration: none;
+	color: #333;
+	overflow: hidden;
+	display: block;
+	padding: 10px 5px 10px 5px;
+}
+.tab-link:hover {
+	color: #333;
+	background: #daf0e9;
+}
+.tab-logo {
+	width: 75%;
+	float: left;
+}
+.tab-price {
+	float: right;
+	font-style: normal;
+	font-weight: normal;
+	color: #46b690;
+}
 /*@media (min-width: 1450px) {
 	.fixed-category-block {
 		width: 400px;
@@ -211,7 +259,7 @@ textarea {resize: none;}
 	.fixed-category-block {
 		width: 500px;
 	}
-}*/
+}
 .category-block-header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -255,7 +303,7 @@ textarea {resize: none;}
 	text-align: right;
 	font-size: 13px;
 	color: #46b690;
-}
+}*/
 /* ПРАВАЯ ЧАСТЬ ОСНОВНОГО БЛОКА */
 .body-header {
 	display: -webkit-box;
