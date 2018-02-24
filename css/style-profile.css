@@ -50,7 +50,8 @@
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     background: #4c6989;
     -moz-border-radius-topright: 90px;
     -webkit-border-top-right-radius: 90px;
@@ -80,7 +81,7 @@
 .link-ava a:hover {color: #46b690;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {margin: 20px 0 0 0;}
-.profile-input{margin: 0 0 20px 0;}
+.profile-input{margin: 0 0 40px 0;}
 .rg-profile {
     background: rgb(70, 179, 148);
     background: -webkit-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
@@ -92,7 +93,7 @@
 .prompt {height: 100px;}
 .menu-main {
     list-style: none;
-    margin: 50px 0 50px 50px;
+    margin: 50px 0 50px 5px;
     padding: 5px 0 5px;
     border: 1px solid #fff;
     -moz-border-radius: 15px 15px 15px 15px;
@@ -143,7 +144,7 @@
 }
 /* ОПИСАНИЕ РАЗДЕЛА*/
 .category-profile form {
-    padding: 50px 50px 30px 50px;
+    padding: 50px 5px 30px 0;
 }
 .form-group {margin-top: 30px;}
 .form-group:first-child {margin-top: 0;}
@@ -292,7 +293,7 @@
 .modal-header h2 {margin: 0;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
 .profile-records {margin: 20px 0 40px 0;}
-.body-list {margin: 0 50px 0 50px; padding: 50px 0 50px 0;}
+.body-list {margin: 0 5px 0 0; padding: 50px 0 50px 0;}
 .block-list-item {
     margin-top: 0;
     padding-bottom: 10px;
