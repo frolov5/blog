@@ -31,14 +31,14 @@ $(document).ready(function () {
         }
     });
 
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         var elem = $('.category-block');
         if ($(this).scrollTop() > 300) {
             elem.addClass('fixed-category-block');
         } else {
             elem.removeClass('fixed-category-block');
         }
-    });
+    });*/
     $(window).scroll(function () {
         var elem = $('.category-block-full');
         if ($(this).scrollTop() > 100) {
