@@ -379,15 +379,20 @@ h2.namе-group{
 	justify-content: center
 }
 .more-post-button {
-	color: #fff;
-	text-transform: uppercase;
 	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
 	cursor: pointer;
-	outline: none;
 }
-.more-post-button:hover { background: #53bd99;color: #fff;}
-.more-post-button:active { background: #9ad8c3;color: #fff;}
-/*БЛОК ВОПРОСОВ*/
+.more-post-button svg {
+	width: 200px;
+	height: 50px;
+	opacity: 0.2;
+}
+.more-post-button:hover { background: #F4F4F4;}
+.more-post-button:active { background: #F4F4F4;}
+    /*БЛОК ВОПРОСОВ*/
 .inline-block-questions {
 	color: #545454;
 	font-size: 16px;
