@@ -14,57 +14,57 @@
     <div class="container-fluid container-fluid-content">
         <div class="row row-wrapper-header">
             <?php
-                require_once 'php/elements/header/header.html';
+                require_once 'php/elements/header/header.php';
             ?>
         </div>
         <div class="row row-wrapper-body">
             <?php
-                require_once 'php/elements/slider/slider.html';
+                require_once 'php/elements/slider/slider.php';
             ?>
             <div class="column">
                 <div class="col-sm-4">
                     <?php
-                        require_once 'php/elements/column/column-category.html';
+                        require_once 'php/elements/column/column-category.php';
                     ?>
                 </div>
                 <div class="col-sm-8">
                     <?php
-                        require_once 'php/elements/post/body-header.html';
+                        require_once 'php/elements/post/post-body-header.php';
                     ?>
                     <div class="body-list">
                         <ul class="block-list block-list-post abbreviated-list">
                             <?php
-                                require 'php/elements/post/block-list.php';
+                                require 'php/elements/post/post-body.php';
                             ?>
                         </ul>
                     </div>
                     <?php
-                        require 'php/elements/more-post/more-post.html';
-                        require_once 'php/elements/question/body-header.html';
+                        require 'php/elements/more-post/more-post.php';
+                        require_once 'php/elements/question/questions-header.php';
                     ?>
                     <div class="body-list">
                         <ul class="block-list-item block-list-item-questions inline-block">
                             <?php
-                                require 'php/elements/question/block-questions.html';
-                                require 'php/elements/question/block-questions.html';
-                                require 'php/elements/question/block-questions.html';
-                                require 'php/elements/question/block-questions.html';
+                                require 'php/elements/question/link-questions.php';
+                                require 'php/elements/question/link-questions.php';
+                                require 'php/elements/question/link-questions.php';
+                                require 'php/elements/question/link-questions.php';
                             ?>
                         </ul>
                     </div>
                     <?php
-                        require 'php/elements/more-post/more-post.html';
+                        require 'php/elements/more-post/more-post.php';
                     ?>
                 </div>
 
             </div>
             <?php
-                    require_once 'php/elements/slider/slider-float.html';
+                    require_once 'php/elements/slider/slider-float.php';
                 ?>
         </div>
         <div class="row row-wrapper-footer">
             <?php
-                require_once 'php/elements/footer/footer.html';
+                require_once 'php/elements/footer/footer.php';
             ?>
         </div>
         <a href="#" class="scrollup">Наверх</a>

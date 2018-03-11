@@ -12,6 +12,7 @@ $(document).ready(function () {
     });
     /*скрываем-показываем поля на 1 вкладке*/
     $(".cat-first").hide();
+    console.log($(".cat-first"));
     $("#main").show();
     $("a.main-link, a.education-link, a.work-link, a.skill-link, a.about-link").on("click", function () {
         var id = $(this).attr('href');

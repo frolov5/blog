@@ -11,12 +11,12 @@
             <div class="body-post body-post-text">
                 <img src="/img/obmen_razumov.jpg" alt="Shekli" width="180px" align="left">
                 <?php
-                    require_once 'media-text.html';
+                    require_once 'media-text.php';
                 ?>
             </div>
             <div class="read_more"><a href="#">Читать далее</a></div>
             <?php
-                require_once 'statistics.html'
+                require_once 'statistics.php'
             ?>
         </div>
     </article>

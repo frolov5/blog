@@ -9,13 +9,13 @@
     <div class="block-review-body block-review-body-post">
         <div class="body-post body-post-text">
             <?php
-                require_once 'full-media-text.html';
+                require_once 'full-media-text.php';
             ?>
         </div>
         <div class="read_more"><a href="#">Читать далее</a></div>
         <?php
-            require_once 'statistics.html';
-            require_once 'comments.html';
+            require_once 'statistics.php';
+            require_once 'comments.php';
         ?>
     </div>
 </article>

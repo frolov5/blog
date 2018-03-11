@@ -29,23 +29,23 @@
 .tab-content-active{
     display: block;
 }
-.link-ava > input {
+.link-profile > input {
     display: none;
     position: absolute;
 }
-.link-ava > label {
+.link-profile > label {
     font-size:14px;
     letter-spacing: 1px;
     font-weight: normal;
     color: #fff;
 }
-/*.link-ava > label:before {
+/*.link-profile > label:before {
     font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
 }*/
-.link-ava > label:hover {color: #46b690;  cursor: pointer;}
-.link-ava > input:checked + label {
+.link-profile > label:hover {color: #46b690;  cursor: pointer;}
+.link-profile > input:checked + label {
 }
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
@@ -81,10 +81,10 @@
 .ava-block .photo-user:hover {
     opacity: 0.3;
 }
-.link-ava {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
-.link-ava:nth-child(2) {border-top: none;}
-.link-ava a {color: #fff;font-size: 14px;letter-spacing: 1px;}
-.link-ava a:hover {color: #46b690;}
+.link-profile {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
+.link-profile:nth-child(2) {border-top: none;}
+.link-profile a {color: #fff;font-size: 14px;letter-spacing: 1px;}
+.link-profile a:hover {color: #46b690;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {margin: 20px 0 0 0;}
 .profile-input{margin: 0 0 40px 0;}
