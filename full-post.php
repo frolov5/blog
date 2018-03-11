@@ -15,23 +15,23 @@
     <div class="container-fluid container-fluid-content">
         <div class="row row-wrapper-header">
             <?php
-                require_once 'php/elements/header/header.html';
+                require_once 'php/elements/header/header.php';
             ?>
         </div>
         <div class="row row-wrapper-body">
             <div class="column">
                 <div class="col-sm-4">
                     <?php
-                        require_once 'php/elements/column/column-category.html';
+                        require_once 'php/elements/column/column-category.php';
                     ?>
                 </div>
                 <div class="col-sm-8">
                     <?php
-                        require_once 'php/elements/post/body-header.html';
+                        require_once 'php/elements/post/post-body-header.php';
                     ?>
                     <div class="body-list">
                         <?php
-                            require_once 'php/elements/post/full-block-list.php';
+                            require_once 'php/elements/post/full-post-body.php';
                         ?>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="row row-wrapper-footer">
             <?php
-                require_once 'php/elements/footer/footer.html';
+                require_once 'php/elements/footer/footer.php';
             ?>
         </div>
         <a href="#" class="scrollup">Наверх</a>
