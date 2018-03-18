@@ -3,7 +3,10 @@ $(document).ready(function () {
         placeholder: "Уровень образования",
         allowClear: true
     });
-
+    $("#search").select2({
+        placeholder: "Выберите категорию",
+        allowClear: true
+    });
     $(document).on('change', '.tab-checked', function () {
         var id = $(this).attr('value');
         $('.tab-content-active').removeClass('tab-content-active').addClass('tab-content-hidden');
