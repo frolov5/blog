@@ -5,7 +5,7 @@
             <input type="submit" class="btn btn-primary" value="Найти">
         </div>
         <div class="col-sm-6 select-category">
-            <select id="search">
+            <select class="search-category">
                 <option>ИТ</option>
                 <option>Готовим дома</option>
                 <option>Гаражный ремонт авто</option>

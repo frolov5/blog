@@ -2,10 +2,16 @@
     <div class="lf-profile">
         <div class="ava-block center">
             <div class="photo-ava">
-                <i class="fa fa-refresh" aria-hidden="true"> Сменить аватар</i>
-                <a href="#">
-                    <img class="photo-user" src="img/avatar3.jpg">
-                </a>
+                <div class="none-avatar">
+                    <a href="#">
+                        <div class="letter-ava">И</div>
+                    </a>
+                </div>
+                <div class="unique-avatar">
+                    <a href="#" class="">
+                        <img class="photo-user" src="img/avatar3.jpg">
+                    </a>
+                </div>
             </div>
             <div class="link-profile">
                 <input id="tab1" type="radio" class="tab-checked" name="tabs" value="content-tab-profile" checked>

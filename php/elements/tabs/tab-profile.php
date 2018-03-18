@@ -62,7 +62,7 @@
                 <div class="category-profile cat-first" id="education">
                     <form action="#" id="education-form" method="post">
                         <div class="education">
-                            <select id="select">
+                            <select class="my-select2">
                                 <option>Высшее</option>
                                 <option>Неоконченное высшее</option>
                                 <option>Среднее специальное</option>

@@ -63,14 +63,19 @@
 }
 .lf-profile .center {text-align: center;}
 /* АВА В КРУГЕ*/
+.photo-ava {
+    padding-top: 40px;
+}
 .photo-ava a {position: relative;}
 .photo-ava .fa {
     position: absolute;
     bottom: 0;
     color: #fff;
 }
-.ava-block .photo-user {
-    margin-top: 40px;
+.none-avatar {
+    margin: auto;
+    background: #d3e4f3;
+    text-transform: uppercase;
     overflow: hidden;
     width: 160px;
     height: 160px;
@@ -79,8 +84,29 @@
     -o-border-radius:50%;
     border-radius:50%;
 }
-.ava-block .photo-user:hover {
+.letter-ava {
+    font-size: 100px;
+    padding-top: 25px;
+}
+.unique-avatar {
+    background: 0;
+}
+.photo-user {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+}
+.none-avatar:hover {
     opacity: 0.3;
+    cursor: pointer;
+}
+.ava-block .unique-avatar:hover {
+    opacity: 0.3;
+    cursor: pointer
 }
 .link-profile {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
 .link-profile:nth-child(2) {border-top: none;}
@@ -342,45 +368,36 @@
 .block-list-item {
     list-style: none;
 }
-/*.block-list-item:hover {box-shadow: none;}
-.block-review-header {color: #fff;}
-.block-review-header:hover {color: #fff;}
-.block-review-header:visited {color: #fff;}
-.crumbs {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-}
-.breadcrumb-link {color: #000;}
-.body-post-text {color: #000;font-size: 14px;}
-.media-text {font-size: 14px;}
-.read_more a {color: #fff;font-size: 14px;}
-.statistics {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 14px;
-}
-.statistics a {color: #000;font-size: 14px;}
+
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 4 ВКЛАДКА */
-.edit {text-align: right;}
+.edit {
+    text-align: right;
+
+}
 .edit .btn {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #fff;
+    outline: none;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    background: #46b690;
+    font-weight: 600;
+    padding: 10px 15px;
 }
-/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 5 ВКЛАДКА */
+.edit .btn:active {background: #46b690;}
+.post_statistics a {color: #545454;}
+.post_statistics a:hover {color: #46b690;}
 .comments {margin: 20px 0 20px 0;}
 .comments .img-thumbnail {
     border: none;
     margin: 0;
     width: 50px;
 }
-/*.author {margin-left: 10px;margin-bottom: 5px;color: #fff;font-weight: normal;}*/
-/*.metadata {color: #000;}*/
-/*.post_statistics a {color: #000;}*/
-/*.post_statistics a:hover {color: #fff;}*/
-/*.media-text {color: #fff;}*/
-/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 6 ВКЛАДКА */
-/*.cat-sixth .read_more {border-bottom: none; text-transform: none; margin-bottom: 0;}*/
+.full-post {
+    border: none!important;
+    margin-bottom: 20px;
+}
