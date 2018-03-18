@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $("#select").select2({
+    $('.my-select2').select2({
         placeholder: "Уровень образования",
         allowClear: true
     });
-    $("#search").select2({
+    $('.search-category').select2({
         placeholder: "Выберите категорию",
         allowClear: true
     });
