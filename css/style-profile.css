@@ -46,6 +46,7 @@
 }*/
 .link-profile > label:hover {color: #46b690;  cursor: pointer;}
 .link-profile > input:checked + label {
+    color: #46b690;  cursor: pointer;
 }
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
@@ -223,13 +224,20 @@
 .select2 {width: 100%!important;}
 .select2-container--default .select2-selection--single {
     background: none!important;
+    height: 34px;
     border: 1px solid #fff!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
     border-radius: 15px 15px 15px 15px!important;
 }
-.select2-container--default .select2-selection--single .select2-selection__rendered {color: #fff!important;}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff!important;
+    line-height: 35px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {top:5px;}
+
 .select2-container--open .select2-dropdown--below {
     letter-spacing: 1px!important;
     border: 1px solid #46b690!important;
@@ -269,7 +277,7 @@
 .category-profile .button {text-align: right;}
 .category-profile .btn {margin-top: 30px;}
 .minus {padding: 6px 14px;}
-.category-profile .btn-primary, .modal-category .btn-primary, .prompt .btn-primary {
+.category-profile .btn-primary, .modal-category .btn-primary{
     background: #4c6989!important;
     border-color: #374c63!important;
     outline: none!important;
@@ -298,18 +306,35 @@
 .modal-header {color: #fff;}
 .modal-header h2 {margin: 0;}
 /* Стилизация блока фильтра */
-.select-category {
-    margin-top: 30px;
+#search-form {position: relative;}
+.prompt .search-and-button {margin-top: 15px;}
+.prompt .btn-primary {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 34px;
+    background: #415A76!important;
+    outline: none!important;
+    -moz-border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
-.input-date {padding: 0;}
+.prompt .btn-primary:hover {border-color: #fff!important;}
+.prompt .btn-primary:active {border-color: #fff!important;}
+.select-category {
+    margin: 0 0 15px 0;
+    padding-right: 0;
+}
+.input-date {
+    margin-top: 0!important;
+    margin-bottom: 15px!important;
+}
 .input-date input{
     width: 49%;
     margin: 0;
     display: inline-block;
-}
-.prompt .btn {
-    width: 100%;
-    margin-bottom: 30px;
 }
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
 .profile-records {margin: 20px 0 40px 0;}
