@@ -96,7 +96,7 @@
 }
 .uppercase {text-transform: uppercase;}
 /* ПОДСКАЗКА */
-.prompt {height: 100px;}
+.prompt {margin: 0;}
 .menu-main {
     list-style: none;
     margin: 50px 0 50px 5px;
@@ -269,7 +269,7 @@
 .category-profile .button {text-align: right;}
 .category-profile .btn {margin-top: 30px;}
 .minus {padding: 6px 14px;}
-.category-profile .btn-primary, .modal-category .btn-primary {
+.category-profile .btn-primary, .modal-category .btn-primary, .prompt .btn-primary {
     background: #4c6989!important;
     border-color: #374c63!important;
     outline: none!important;
@@ -297,21 +297,27 @@
 }
 .modal-header {color: #fff;}
 .modal-header h2 {margin: 0;}
+/* Стилизация блока фильтра */
+.select-category {
+    margin-top: 30px;
+}
+.input-date {padding: 0;}
+.input-date input{
+    width: 49%;
+    margin: 0;
+    display: inline-block;
+}
+.prompt .btn {
+    width: 100%;
+    margin-bottom: 30px;
+}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
 .profile-records {margin: 20px 0 40px 0;}
 .body-list {margin: 0 5px 0 0; padding: 50px 0 50px 0;}
 .block-list-item {
-    margin-top: 0;
-    padding-bottom: 10px;
-    transition: none;
-    box-shadow: none;
-    border: 1px solid #fff;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
-    -o-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
+    list-style: none;
 }
-.block-list-item:hover {box-shadow: none;}
+/*.block-list-item:hover {box-shadow: none;}
 .block-review-header {color: #fff;}
 .block-review-header:hover {color: #fff;}
 .block-review-header:visited {color: #fff;}
@@ -346,10 +352,10 @@
     margin: 0;
     width: 50px;
 }
-.author {margin-left: 10px;margin-bottom: 5px;color: #fff;font-weight: normal;}
-.metadata {color: #000;}
-.post_statistics a {color: #000;}
-.post_statistics a:hover {color: #fff;}
-.media-text {color: #fff;}
+/*.author {margin-left: 10px;margin-bottom: 5px;color: #fff;font-weight: normal;}*/
+/*.metadata {color: #000;}*/
+/*.post_statistics a {color: #000;}*/
+/*.post_statistics a:hover {color: #fff;}*/
+/*.media-text {color: #fff;}*/
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 6 ВКЛАДКА */
-.cat-sixth .read_more {border-bottom: none; text-transform: none; margin-bottom: 0;}
+/*.cat-sixth .read_more {border-bottom: none; text-transform: none; margin-bottom: 0;}*/
