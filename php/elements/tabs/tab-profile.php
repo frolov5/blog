@@ -4,7 +4,7 @@
             <div class="prompt"></div>
         </div>
     </div>
-    <div class="col-sm-8 col-pad">
+    <div class="col-sm-8">
         <div class="rg-profile profile-input clearfix">
             <div class="col-sm-5">
                 <div class="main-block-menu">

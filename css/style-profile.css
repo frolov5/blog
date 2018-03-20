@@ -1,6 +1,6 @@
 * {outline: none;}
 .clearfix {clear: both;}
-.col-pad {margin-top: 20px;}
+/*.col-pad {margin-top: 20px;}*/
 /* ВКЛАДКИ*/
 /*.row-tabs {
     clear: left;
@@ -66,12 +66,6 @@
 .photo-ava {
     padding-top: 40px;
 }
-.photo-ava a {position: relative;}
-.photo-ava .fa {
-    position: absolute;
-    bottom: 0;
-    color: #fff;
-}
 .none-avatar {
     margin: auto;
     background: #d3e4f3;
@@ -83,13 +77,40 @@
     -webkit-border-radius:50%;
     -o-border-radius:50%;
     border-radius:50%;
+    position: relative;
 }
 .letter-ava {
     font-size: 100px;
     padding-top: 25px;
+    color: #4c6989;
+}
+.change-ava {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    width: 100%;
+    padding: 15px 15px 5px 15px;
+    color: #fff;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+}
+.change-ava span {
+    font-weight: bold;
+    display: block;
+    font-size: 10px;
+}
+.none-avatar:hover .change-ava {
+    opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
 .unique-avatar {
     background: 0;
+    position: relative;
+    display: none;
 }
 .photo-user {
     overflow: hidden;
@@ -100,20 +121,21 @@
     -o-border-radius:50%;
     border-radius:50%;
 }
-.none-avatar:hover {
-    opacity: 0.3;
-    cursor: pointer;
-}
-.ava-block .unique-avatar:hover {
-    opacity: 0.3;
-    cursor: pointer
-}
 .link-profile {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
 .link-profile:nth-child(2) {border-top: none;}
 .link-profile a {color: #fff;font-size: 14px;letter-spacing: 1px;}
 .link-profile a:hover {color: #46b690;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
-.profile-prompt {margin: 20px 0 0 0;}
+.profile-prompt {
+    margin: 20px 0 20px 0;
+    transition: box-shadow 150ms linear;
+    box-shadow: 0 1px 3px rgba(0,0,0,.28);
+}
+.profile-prompt:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
+    -moz-box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
+    box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
+}
 .profile-input{margin: 0 0 40px 0;}
 .rg-profile {
     background: rgb(70, 179, 148);
@@ -339,16 +361,15 @@
     top: 0;
     right: 15px;
     height: 34px;
-    background: #415A76!important;
+    background: #545454!important;
     outline: none!important;
     -moz-border-radius: 0 15px 15px 0;
     -webkit-border-radius: 0 15px 15px 0;
     -o-border-radius: 0 15px 15px 0;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
+    border: none;
 }
-.prompt .btn-primary:hover {border-color: #fff!important;}
-.prompt .btn-primary:active {border-color: #fff!important;}
 .select-category {
     margin: 0 0 15px 0;
     padding-right: 0;
@@ -372,7 +393,6 @@
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 4 ВКЛАДКА */
 .edit {
     text-align: right;
-
 }
 .edit .btn {
     margin-top: 20px;
@@ -401,3 +421,45 @@
     border: none!important;
     margin-bottom: 20px;
 }
+/* СТИЛИЗАЦИЯ БЛОКА ФИЛЬТРА */
+.search-and-button .search-by-word {
+    border: 1px solid #545454;
+    color: #545454;
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+}
+.search-and-button .search-by-word:active, .search-and-button .search-by-word:focus {
+    border: 1px solid #46b690;
+}
+.select-category .select2-container--default .select2-selection--single {
+    border: 1px solid #545454!important;
+}
+.select-category .select2-container--default .select2-selection--single:active, .select-category .select2-container--default .select2-selection--single:focus {
+    border: 1px solid #46b690!important;
+}
+.select-category .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #545454!important;
+}
+.select-category .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #545454!important;
+}
+.select-category .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #545454 transparent transparent transparent!important;
+}
+.select-category .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #545454 transparent!important;
+}
+.prompt .input-date input {
+    border: 1px solid #545454;
+    color: #545454;
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+}
+.prompt .input-date input:active, .prompt .input-date input:focus {
+    border: 1px solid #46b690;
+}
+.prompt input::-webkit-input-placeholder {color:#545454;}
+.prompt input::-moz-placeholder          {color:#545454;}
+.prompt input:-ms-input-placeholder      {color:#545454;}
