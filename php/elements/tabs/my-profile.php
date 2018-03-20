@@ -5,11 +5,19 @@
                 <div class="none-avatar">
                     <a href="#">
                         <div class="letter-ava">И</div>
+                        <div class="change-ava">
+                            <span>Загрузить фото</span>
+                            <i class="fa fa-download fa-2x"></i>
+                        </div>
                     </a>
                 </div>
                 <div class="unique-avatar">
                     <a href="#" class="">
                         <img class="photo-user" src="img/avatar3.jpg">
+                        <div class="letter-ava">
+                            <span>Загрузить фото</span>
+                            <i class="fa fa-camera fa-5x"></i>
+                        </div>
                     </a>
                 </div>
             </div>
