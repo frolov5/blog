@@ -44,9 +44,10 @@
     font-weight: normal;
     margin-right: 10px;
 }*/
-.link-profile > label:hover {color: #46b690;  cursor: pointer;}
+.link-profile > label:hover {color: #000;  cursor: pointer;}
 .link-profile > input:checked + label {
-    color: #46b690;  cursor: pointer;
+    color: #000;
+    cursor: pointer;
 }
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
@@ -129,14 +130,35 @@
 .profile-prompt {
     margin: 20px 0 20px 0;
     transition: box-shadow 150ms linear;
-    box-shadow: 0 1px 3px rgba(0,0,0,.28);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(76,105,137,.28);
+    border: 1px solid #cbd6e2;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
 }
 .profile-prompt:hover {
-    -webkit-box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
-    -moz-box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
-    box-shadow: 0 0 10px 0 rgba(48,48,48,0.61);
+    -webkit-box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
+    -moz-box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
+    box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
 }
 .profile-input{margin: 0 0 40px 0;}
+.profile-block-input{
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(76,105,137,.28);
+    border: 1px solid #cbd6e2;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+.profile-block-input:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
+    -moz-box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
+    box-shadow: 0 0 10px 0 rgba(76,105,137,0.61);
+}
 .rg-profile {
     background: rgb(70, 179, 148);
     background: -webkit-linear-gradient(10deg, rgb(70, 179, 148) 0%, rgb(74, 107, 138) 93%);
@@ -150,7 +172,7 @@
     list-style: none;
     margin: 50px 0 50px 5px;
     padding: 5px 0 5px;
-    border: 1px solid #fff;
+    border: 1px solid #cbd6e2;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
     -o-border-radius: 15px 15px 15px 15px;
@@ -172,8 +194,8 @@
     transition: color .2s;
     outline: none;
 }
-.menu-main a, .menu-main a:visited {color: #fff;}
-.menu-main a.current, .menu-main a:hover {color: #4c6989;}
+.menu-main a, .menu-main a:visited {color: #4c6989;}
+/*.menu-main a.current, .menu-main a:hover {color: #46b690;}*/
 .menu-main a:before,
 .menu-main a:after {
     content: "";
@@ -230,21 +252,28 @@
 /* Стилизация инпутов */
 .form-group input,.form-group textarea {
     background: none;
-    color: #fff;
+    color: #4c6989;
     letter-spacing: 1px;
-    border: 1px solid #fff;
+    border: 1px solid #cbd6e2;
     padding: 7px 8px;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
     -o-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
     outline: none;
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none!important;
 }
+.form-group input:active, .form-group input:focus, .form-group textarea:active, .form-group textarea:focus {
+    border: 1px solid #4c8889;
+}
+
 .skill .skill-input {margin-top: 30px}
 .skill .skill-input:first-child {margin-top: 0;}
-.form-group input::-webkit-input-placeholder {color:#fff;}
-.form-group input::-moz-placeholder          {color:#fff;}
-.form-group input:-ms-input-placeholder      {color:#fff;}
+.form-group input::-webkit-input-placeholder {color:#4c6989;}
+.form-group input::-moz-placeholder          {color:#4c6989;}
+.form-group input:-ms-input-placeholder      {color:#4c6989;}
 .form-group input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
 .form-group input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 .form-group input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
@@ -253,9 +282,9 @@
 .form-group input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
 .form-group input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 .form-group input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
-.form-group textarea::-webkit-input-placeholder {color:#fff;}
-.form-group textarea::-moz-placeholder          {color:#fff;}
-.form-group textarea:-ms-input-placeholder      {color:#fff;}
+.form-group textarea::-webkit-input-placeholder {color:#4c6989;}
+.form-group textarea::-moz-placeholder          {color:#4c6989;}
+.form-group textarea:-ms-input-placeholder      {color:#4c6989;}
 .form-group textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
 .form-group textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 .form-group textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
@@ -266,29 +295,29 @@
 .form-group textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 /* Стилизация радиобаттонов */
 .chek-button {margin: 30px 0 30px 0;}
-.radio-inline {color: #fff;}
+.radio-inline {color: #4c6989;}
 .radio-inline input[type=radio] {background: none;}
 /* Стилизация селекта */
 .select2 {width: 100%!important;}
 .select2-container--default .select2-selection--single {
     background: none!important;
     height: 34px;
-    border: 1px solid #fff!important;
+    border: 1px solid #cbd6e2!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
     border-radius: 15px 15px 15px 15px!important;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #fff!important;
+    color: #4c6989!important;
     line-height: 35px;
 }
-
+.select2-container--default .select2-selection--single .select2-selection__placeholder {color: #4c6989;}
 .select2-container--default .select2-selection--single .select2-selection__arrow {top:5px;}
 
 .select2-container--open .select2-dropdown--below {
     letter-spacing: 1px!important;
-    border: 1px solid #46b690!important;
+    border: 1px solid #4c8889!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
@@ -296,21 +325,21 @@
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
     padding-left: 10px;
-    border: 1px solid #46b690!important;
+    border: 1px solid #4c8889!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
     border-radius: 15px 15px 15px 15px!important;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background: #46b690!important;
+    background: #4c8889!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
     border-radius: 15px 15px 15px 15px!important;
 }
 .select2-container--default .select2-results__option[aria-selected=true] {
-    background: #46b690!important;
+    background: #4c8889!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
     -o-border-radius: 15px 15px 15px 15px!important;
@@ -321,13 +350,25 @@
     margin-bottom: 5px;
     margin-left: 5px;
 }
+.select2-container--default .select2-selection--single:active {
+    border: 1px solid #4c8889!important;
+}
+.select2-container--default .select2-selection--single:focus {
+    border: 1px solid #4c8889!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #4c6989 transparent transparent transparent!important;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #4c6989 transparent!important;
+}
 /* Стилизация кнопки */
 .category-profile .button {text-align: right;}
 .category-profile .btn {margin-top: 30px;}
 .minus {padding: 6px 14px;}
-.category-profile .btn-primary, .modal-category .btn-primary{
-    background: #4c6989!important;
-    border-color: #374c63!important;
+.category-profile .btn-primary, .modal-category .btn-primary, .file-field .btn-primary{
+    background: #6686aa!important;
+    border-color: #4c6989!important;
     outline: none!important;
     -moz-border-radius: 15px 15px 15px 15px!important;
     -webkit-border-radius: 15px 15px 15px 15px!important;
@@ -336,9 +377,15 @@
 }
 .category-profile .btn-primary:hover {background: #5a7ca2!important;outline: none!important;}
 .category-profile .btn-primary:active {background: #537396!important;outline: none!important;}
-.modal-category .btn-primary:hover {background: #5a7ca2!important;outline: none!important;}
-.modal-category .btn-primary:active {background: #537396!important;outline: none!important;}
+.modal-category .btn-primary:hover {background: #545454!important;outline: none!important;}
+.modal-category .btn-primary:active {background: #545454!important;outline: none!important;}
 /* Стилизация модального окна изменить пароль */
+.modal-content {
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
 .modal-category {
     text-align: center;
     background: rgb(70, 179, 148);
@@ -351,8 +398,25 @@
     -o-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
 }
-.modal-header {color: #fff;}
+.modal-header {color: #4c6989;}
 .modal-header h2 {margin: 0;}
+.modal-body input[type=button] {
+    background: #6686aa;
+    border-color: #4c6989;
+    color: #fff;
+}
+.modal-body input[type=button]:hover {
+    background: #5a7ca2;
+    outline: none;
+}
+.modal-body input[type=button]:active {
+    background: #537396;
+    outline: none;
+}
+.modal-body input[type=button]:focus {
+    background: #537396;
+    outline: none;
+}
 /* Стилизация блока фильтра */
 #search-form {position: relative;}
 .prompt .search-and-button {margin-top: 15px;}
@@ -361,13 +425,19 @@
     top: 0;
     right: 15px;
     height: 34px;
-    background: #545454!important;
+    color: #fff;
+    background: #6686aa!important;
     outline: none!important;
     -moz-border-radius: 0 15px 15px 0;
     -webkit-border-radius: 0 15px 15px 0;
     -o-border-radius: 0 15px 15px 0;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
+    border: none;
+}
+.prompt .btn-primary:hover {background: #5a7ca2;}
+.prompt .btn-primary:active {
+    background: #4c6989;
     border: none;
 }
 .select-category {
@@ -388,6 +458,13 @@
 .body-list {margin: 0 5px 0 0; padding: 50px 0 50px 0;}
 .block-list-item {
     list-style: none;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(76,105,137,.28);
+    border: 1px solid #cbd6e2;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 4 ВКЛАДКА */
@@ -404,13 +481,13 @@
     -o-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
     border: none;
-    background: #46b690;
+    background: #4c8889;
     font-weight: 600;
     padding: 10px 15px;
 }
 .edit .btn:active {background: #46b690;}
 .post_statistics a {color: #545454;}
-.post_statistics a:hover {color: #46b690;}
+.post_statistics a:hover {color: #4c8889;}
 .comments {margin: 20px 0 20px 0;}
 .comments .img-thumbnail {
     border: none;
@@ -421,45 +498,28 @@
     border: none!important;
     margin-bottom: 20px;
 }
-/* СТИЛИЗАЦИЯ БЛОКА ФИЛЬТРА */
-.search-and-button .search-by-word {
-    border: 1px solid #545454;
-    color: #545454;
-    outline: 0;
+/*Стилизация file-input*/
+.modal-body .btn-primary {
+    background: #6686aa;
+    border-color: #4c6989;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+.modal-body .btn-primary:hover {background: #5a7ca2;}
+.modal-body .btn-primary:active {background: #537396;}
+.modal-body .file-caption {
+    background: none;
+    color: #4c6989;
+    letter-spacing: 1px;
+    border: 1px solid #cbd6e2;
+    padding: 7px 8px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    outline: none;
     outline-offset: 0;
-    box-shadow: none;
+    box-shadow: none!important;
 }
-.search-and-button .search-by-word:active, .search-and-button .search-by-word:focus {
-    border: 1px solid #46b690;
-}
-.select-category .select2-container--default .select2-selection--single {
-    border: 1px solid #545454!important;
-}
-.select-category .select2-container--default .select2-selection--single:active, .select-category .select2-container--default .select2-selection--single:focus {
-    border: 1px solid #46b690!important;
-}
-.select-category .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #545454!important;
-}
-.select-category .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #545454!important;
-}
-.select-category .select2-container--default .select2-selection--single .select2-selection__arrow b{
-    border-color: #545454 transparent transparent transparent!important;
-}
-.select-category .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
-    border-color: transparent transparent #545454 transparent!important;
-}
-.prompt .input-date input {
-    border: 1px solid #545454;
-    color: #545454;
-    outline: 0;
-    outline-offset: 0;
-    box-shadow: none;
-}
-.prompt .input-date input:active, .prompt .input-date input:focus {
-    border: 1px solid #46b690;
-}
-.prompt input::-webkit-input-placeholder {color:#545454;}
-.prompt input::-moz-placeholder          {color:#545454;}
-.prompt input:-ms-input-placeholder      {color:#545454;}

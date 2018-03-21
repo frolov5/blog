@@ -2,7 +2,7 @@
     <div class="lf-profile">
         <div class="ava-block center">
             <div class="photo-ava">
-                <div class="none-avatar">
+                <div class="none-avatar" data-toggle="modal" data-target="#modal-change-ava">
                     <a href="#">
                         <div class="letter-ava">И</div>
                         <div class="change-ava">
@@ -11,7 +11,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="unique-avatar">
+                <div class="unique-avatar" data-toggle="modal" data-target="#modal-change-ava">
                     <a href="#" class="">
                         <img class="photo-user" src="img/avatar3.jpg">
                         <div class="letter-ava">
@@ -19,6 +19,23 @@
                             <i class="fa fa-camera fa-5x"></i>
                         </div>
                     </a>
+                </div>
+                <div class="modal fade" id="modal-change-ava" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                                <h2 class="confirm-password">Загрузка новой фотографии</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" method="post">
+                                    <p>Для загрузки фотографии используйте форматы JPG, GIF или PNG.</p>
+                                    <p>Если загрузка не удается попробуйте использовать фотографию меньшего размера</p>
+                                    <input id="input-id" type="file" class="file" data-preview-file-type="text" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="link-profile">

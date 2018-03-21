@@ -1,11 +1,6 @@
 <div id="content-tab-profile" class="tab-content-active">
     <div class="col-sm-8">
-        <div class="rg-profile profile-prompt">
-            <div class="prompt"></div>
-        </div>
-    </div>
-    <div class="col-sm-8">
-        <div class="rg-profile profile-input clearfix">
+        <div class="profile-input profile-block-input clearfix">
             <div class="col-sm-5">
                 <div class="main-block-menu">
                     <ul class="menu-main">
@@ -15,7 +10,7 @@
                         <li><a href="#skill" class="skill-link">Навыки</a></li>
                         <li><a href="#about" class="about-link">О себе</a></li>
                         <li><a href="#" class="statistic-link">Статистика</a></li>
-                        <li><a href="#" class="change-password" data-toggle="modal" data-target="#myModal">Изменить пароль</a></li>
+                        <li><a href="#" class="change-password" data-toggle="modal" data-target="#modal-change-password">Изменить пароль</a></li>
                     </ul>
                 </div>
             </div>
@@ -137,7 +132,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal fade" id="modal-change-password" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
