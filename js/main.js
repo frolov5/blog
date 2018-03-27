@@ -4,7 +4,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 3000
 
     });
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000
 
     });
 
@@ -66,5 +66,6 @@ $(document).ready(function () {
     $('#nav-icon').click(function () {
         $(this).toggleClass('open');
     });
+
 });
 

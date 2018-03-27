@@ -545,3 +545,25 @@ h2.namе-group{
 	line-height: 1.8em;
 	vertical-align: center;
 }
+/*ПРОЦЕСС ЗАГРУЗКИ*/
+.hide-background,
+.download-process {
+	position: fixed;
+	display: none;
+}
+.hide-background {
+	z-index: 9998;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	left:0;
+	top:0;
+}
+.download-process {
+	z-index: 9999; /*значение должно больше чем для .hidescreen*/
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+}

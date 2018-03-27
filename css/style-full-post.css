@@ -55,14 +55,19 @@
     -webkit-border-radius: 15px 15px 15px 15px;
     -o-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
-    border:none;
-    background: #46b690;
+    border: 1px solid #3e6f70;
+    background: #4c8889;
     font-weight: 600;
     padding: 10px 15px
 }
-.comments .publish:hover {background: #53bd99;}
-.comments .reply {color: #545454;}
-.comments .reply:hover{color:#46b690;}
+.comments .publish:hover {background: #376263;}
+.comments .publish:active {background: #3e6f70;}
+.comments .reply {
+    color: #4c6989;
+    font-weight: bold;
+}
+.comments .reply:hover{color: #376263;}
+.comments .reply:active{color: #3e6f70;}
 /*Должны авторизоваться*/
 .not-authorized {
     color: #545454;
@@ -81,3 +86,26 @@
 }
 /*Поле ввода комментария*/
 .block-comments-hide {display: none;}
+/*Блок фильтр*/
+.filter-param-value {margin: 10px 0 10px 0;}
+.filter-param-value .select2 {padding-bottom: 10px;}
+.filter-param-value .search-and-button {
+    position: relative;
+    padding-bottom: 10px;
+}
+.filter-param-value .btn-primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    color: #fff;
+    background: #6686aa!important;
+    outline: none!important;
+    -moz-border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    border: none;
+}
+.filter-param-value .input-date {margin-bottom: 0!important;}

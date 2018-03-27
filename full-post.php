@@ -7,7 +7,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="select2/dist/css/select2.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-profile.css">
     <link rel="stylesheet" href="css/style-full-post.css" />
 </head>
 <body>
@@ -23,6 +25,7 @@
                 <div class="col-sm-4">
                     <?php
                         require_once 'php/elements/column/column-category.php';
+                        require_once 'php/elements/column/column-filtr.php'
                     ?>
                 </div>
                 <div class="col-sm-8">
@@ -48,6 +51,7 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script src="js/myprofile.js"></script>
+<script src="select2/dist/js/select2.js"></script>
 </body>
 </html>
