@@ -29,7 +29,7 @@
 .tab-content-active{
     display: block;
 }
-.link-profile > input {
+/*.link-profile > input {
     display: none;
     position: absolute;
 }
@@ -39,16 +39,16 @@
     font-weight: normal;
     color: #fff;
 }
-/*.link-profile > label:before {
+.link-profile > label:before {
     font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
-}*/
+}
 .link-profile > label:hover {color: #000;  cursor: pointer;}
 .link-profile > input:checked + label {
     color: #000;
     cursor: pointer;
-}
+}*/
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
     position: relative;
@@ -125,7 +125,8 @@
 .link-profile {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
 .link-profile:nth-child(2) {border-top: none;}
 .link-profile a {color: #fff;font-size: 14px;letter-spacing: 1px;}
-.link-profile a:hover {color: #46b690;}
+.link-profile a:hover {color: #000;}
+.active-link-profile {color: #000!important;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {
     margin: 20px 0 20px 0;
@@ -228,27 +229,6 @@
 .form-group:last-child {margin-bottom: 0;}
 /* flash-сообщения */
 .cat-first {position: relative;}
-.updated {
-    display: none;
-    top: 7px;
-    left: 22px;
-    position: absolute;
-    background: #def0d8;
-    color: #48725c;
-    padding: 10px 0 10px 10px;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
-    -o-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
-.updated p {margin: 0;display: inline-block;}
-.updated span {
-    padding: 10px 10px 10px 5px;
-    cursor: pointer;
-    opacity:0.5;
-    -moz-opacity:0.5;
-    filter:alpha(opacity=50);
-}
 /* Стилизация инпутов */
 .form-group input,.form-group textarea {
     background: none;
@@ -455,7 +435,6 @@
 }
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 2 ВКЛАДКА */
 .profile-records {margin: 20px 0 40px 0;}
-.body-list {margin: 0 5px 0 0; padding: 50px 0 50px 0;}
 .block-list-item {
     list-style: none;
     background: #fff;
@@ -482,10 +461,12 @@
     border-radius: 15px 15px 15px 15px;
     border: none;
     background: #4c8889;
+    border: 1px solid #3e6f70;
     font-weight: 600;
     padding: 10px 15px;
 }
-.edit .btn:active {background: #46b690;}
+.edit .btn:hover {background: #376263;}
+.edit .btn:active {background: #3e6f70;}
 .post_statistics a {color: #545454;}
 .post_statistics a:hover {color: #4c8889;}
 .comments {margin: 20px 0 20px 0;}

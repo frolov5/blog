@@ -39,6 +39,36 @@
                 </div>
             </div>
             <div class="link-profile">
+                <a href="#" class="tab-checked active-link-profile" data-value="content-tab-profile">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> Профиль
+                </a>
+            </div>
+            <div class="link-profile">
+                <a href="#" class="tab-checked" data-value="content-tab-records">
+                    <i class="fa fa-files-o" aria-hidden="true"></i> Записи
+                </a>
+            </div>
+            <div class="link-profile">
+                <a href="#" class="tab-checked" data-value="content-tab-bookmarks">
+                    <i class="fa fa-files-o" aria-hidden="true"></i> Закладки
+                </a>
+            </div>
+            <div class="link-profile">
+                <a href="#" class="tab-checked" data-value="content-tab-issues">
+                    <i class="fa fa-files-o" aria-hidden="true"></i> Вопросы
+                </a>
+            </div>
+            <div class="link-profile">
+                <a href="#" class="tab-checked" data-value="content-tab-answer">
+                    <i class="fa fa-files-o" aria-hidden="true"></i> Ответы
+                </a>
+            </div>
+            <div class="link-profile">
+                <a href="#" class="tab-checked" data-value="content-tab-comments">
+                    <i class="fa fa-files-o" aria-hidden="true"></i> Комментарии
+                </a>
+            </div>
+            <!--<div class="link-profile">
                 <input id="tab1" type="radio" class="tab-checked" name="tabs" value="content-tab-profile" checked>
                 <label for="tab1" title="Профиль"><i class="fa fa-user-o" aria-hidden="true"></i> Профиль</label>
             </div>
@@ -66,7 +96,7 @@
                 <input id="tab6" type="radio" class="tab-checked" name="tabs" value="content-tab-comments">
                 <label for="tab6" title="Мои комментарии"><i class="fa fa-commenting-o"
                                                              aria-hidden="true"></i> Комментарии</label>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

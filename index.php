@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<?php
+    require_once 'php/elements/download/download-process.php';
+?>
 <div id="wrapper">
     <div class="container-fluid container-fluid-content">
         <div class="row row-wrapper-header">

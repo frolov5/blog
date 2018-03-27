@@ -16,10 +16,6 @@
             </div>
             <div class="col-sm-7">
                 <div class="category-profile cat-first" id="main">
-                    <div class="updated">
-                        <p>Аккаунт пользователя был обновлен</p>
-                        <span>X</span>
-                    </div>
                     <form action="#"  class="form-active" method="post">
                         <div class="form-group">
                             <input type="text" class="form-control" name="login"
