@@ -494,7 +494,7 @@ h2.namе-group{
 	position: absolute;
 }
 .toggle input:checked ~ .btn {left: 32px;}
-.toggle input:checked ~ .btn {background: #749C90;}
+.toggle input:checked ~ .btn {background: #4c8889;}
 .toggle .btn {
 	display: block;
 	position: absolute;
@@ -520,7 +520,7 @@ h2.namе-group{
 	position: absolute;
 	top: -5px;
 	left: 8px;
-	color: #749C90;
+	color: #4c8889;
 }
 .toggle .labels:after {
 	font-family: FontAwesome;
