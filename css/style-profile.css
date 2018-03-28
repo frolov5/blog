@@ -52,7 +52,7 @@
 /* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ */
 .lf-profile {
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 40px;
     background: #4c6989;
     -moz-border-radius-topright: 90px;
@@ -129,7 +129,7 @@
 .active-link-profile {color: #000!important;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {
-    margin: 20px 0 20px 0;
+    margin: 40px 0 20px 0;
     transition: box-shadow 150ms linear;
     background: #fff;
     box-shadow: 0 1px 3px rgba(76,105,137,.28);
@@ -146,7 +146,7 @@
 }
 .profile-input{margin: 0 0 40px 0;}
 .profile-block-input{
-    margin-top: 20px;
+    margin-top: 40px;
     background: #fff;
     box-shadow: 0 1px 3px rgba(76,105,137,.28);
     border: 1px solid #cbd6e2;
@@ -415,9 +415,9 @@
     cursor: pointer;
     border: none;
 }
-.prompt .btn-primary:hover {background: #5a7ca2;}
+.prompt .btn-primary:hover {background: #5a7ca2!important;}
 .prompt .btn-primary:active {
-    background: #4c6989;
+    background: #4c6989!important;
     border: none;
 }
 .select-category {
