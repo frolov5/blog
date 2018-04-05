@@ -1,0 +1,204 @@
+/*Стилизация пре-просмотр профиля*/
+.link-preview-profile {
+    padding-left: 10px;
+}
+.link-preview-profile:first-child {border-top: none;}
+.link-preview-profile:nth-child(2) {border-top: 2px dashed #f0f0f0;}
+.link-preview-profile .tab-checked {margin-left: 30px;}
+.user-block {
+    display: inline-block;
+}
+.ava-block-border {
+    border-bottom: 2px solid #4c6989;
+}
+.preview-photo-ava {
+    display: inline-block;
+    padding: 0;
+}
+.lf-profile-ava {background: none;}
+.preview-none-avatar {
+    margin: auto;
+    background: #d3e4f3;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+.preview-none-avatar a {cursor: default;}
+.preview-none-avatar .letter-ava {font-size: 50px;}
+.preview-avatar {
+    width: 100px;
+    height: 100px;
+    cursor: none;
+    display: none;
+    margin: auto;
+    overflow: hidden;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+.preview-avatar a {cursor: default;}
+.preview-avatar .photo-user {
+    width: 100px;
+    height: 100px;
+}
+.lf-profile-tab {
+    margin-top: 40px;
+    -moz-border-radius-topright: 90px;
+    -webkit-border-top-right-radius: 90px;
+    border-top-right-radius: 90px;
+    -moz-border-radius-bottomleft: 90px;
+    -webkit-border-bottom-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+.profile-block-input {margin-top: 0;}
+.profile-prompt {margin-top: 0;}
+/*РЕЗЮМЕ*/
+.block-resume {margin: 20px;}
+.heading-block-resume {
+    color: #4c6989;
+    font-weight: bold;
+}
+.resume-list dt {
+    width: 150px;
+    color: #6b7886;
+    font-weight: bold;
+    text-align: left;
+    white-space: normal;
+    display: block;
+    float: left;
+    clear: left;
+}
+.resume-list dd {
+    margin-left: 155px;
+    margin-bottom: 10px;
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+}
+.resume-list dd:before, .resume-list dd:after {
+    content: " ";
+    display: table;
+}
+.education-info p {
+    font-weight: bold;
+    padding-left: 10px;
+    font-style: italic;
+}
+.info-high-school {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #6b7886;
+    font-style: normal!important;
+}
+.info-name-company {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #6b7886;
+    padding-left: 25px;
+    font-weight: bold;
+}
+.work-info li {
+    padding: 10px 0 0 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.skills-info span {
+    display: inline-block;
+    background: rgb(242,247,251);
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+.about-you p {
+    text-align: justify;
+    line-height: 1.41176471;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 15px;
+}
+.statistics-header {text-align: right;}
+.heading-block-statistics {
+    color: #6b7886;
+    font-weight: bold;
+    white-space: normal;
+}
+.time-on-site {
+    font-style: italic;
+    font-weight: bold;
+}
+.block-resume .table-striped thead th {
+    color: #4c6989;
+    font-weight: bold;
+}
+.block-resume .table-striped tbody td {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.progress-bar {
+    width: 50%;
+}
+.progress-dots {
+    border-radius: 1em;
+    background: #6b7886;
+    height: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.progress-dot {
+    position: absolute;
+    border-radius: 5em;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-top: -8px;
+    background: #4c6989;
+    font-size: 12px;
+}
+
+.progress-start {left: 90px;}
+.progress-finish {right: 90px;}
+.progress-label {
+    position: relative;
+    top: -40px;
+    width: 120px;
+    text-align: center;
+    margin-left: -50px;
+    left: 50%;
+    font-size: 120%;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+.progress-dots .progress-bar {
+    text-align: right;
+    background: #4c6989;
+}
+
+.progress-bar .progress-dot {
+    margin-left: -10px;
+}
+
+.progress-bar-disabled {
+    background: transparent !important;
+}
+
+.progress-bar-disabled .progress-dot {
+    background: #6b7886;
+}
