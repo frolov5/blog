@@ -1,7 +1,7 @@
 <div class="col-sm-4">
     <div class="lf-profile">
-        <div class="ava-block center">
-            <div class="photo-ava">
+        <div class="ava-block">
+            <div class="photo-ava center">
                 <div class="none-avatar" data-toggle="modal" data-target="#modal-change-ava">
                     <a href="#">
                         <div class="letter-ava">И</div>
@@ -12,11 +12,11 @@
                     </a>
                 </div>
                 <div class="unique-avatar" data-toggle="modal" data-target="#modal-change-ava">
-                    <a href="#" class="">
+                    <a href="#">
                         <img class="photo-user" src="img/avatar3.jpg">
-                        <div class="letter-ava">
+                        <div class="change-ava">
                             <span>Загрузить фото</span>
-                            <i class="fa fa-camera fa-5x"></i>
+                            <i class="fa fa-download fa-2x"></i>
                         </div>
                     </a>
                 </div>
@@ -45,27 +45,27 @@
             </div>
             <div class="link-profile">
                 <a href="#" class="tab-checked" data-value="content-tab-records">
-                    <i class="fa fa-files-o" aria-hidden="true"></i> Записи
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Записи
                 </a>
             </div>
             <div class="link-profile">
                 <a href="#" class="tab-checked" data-value="content-tab-bookmarks">
-                    <i class="fa fa-files-o" aria-hidden="true"></i> Закладки
+                    <i class="fa fa-paperclip" aria-hidden="true"></i> Закладки
                 </a>
             </div>
             <div class="link-profile">
                 <a href="#" class="tab-checked" data-value="content-tab-issues">
-                    <i class="fa fa-files-o" aria-hidden="true"></i> Вопросы
+                    <i class="fa fa-question" aria-hidden="true"></i> Вопросы
                 </a>
             </div>
             <div class="link-profile">
                 <a href="#" class="tab-checked" data-value="content-tab-answer">
-                    <i class="fa fa-files-o" aria-hidden="true"></i> Ответы
+                    <i class="fa fa-reply" aria-hidden="true"></i> Ответы
                 </a>
             </div>
             <div class="link-profile">
                 <a href="#" class="tab-checked" data-value="content-tab-comments">
-                    <i class="fa fa-files-o" aria-hidden="true"></i> Комментарии
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i> Комментарии
                 </a>
             </div>
             <!--<div class="link-profile">

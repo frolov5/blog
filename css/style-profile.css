@@ -63,10 +63,14 @@
     border-bottom-left-radius: 90px;
 }
 .lf-profile .center {text-align: center;}
+
 /* АВА В КРУГЕ*/
+
 .photo-ava {
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
+/*ава без фотки*/
 .none-avatar {
     margin: auto;
     background: #d3e4f3;
@@ -108,10 +112,26 @@
     -webkit-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
+/*ава с фоткой фотки*/
 .unique-avatar {
-    background: 0;
-    position: relative;
     display: none;
+    margin: auto;
+    background: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    position: relative;
+}
+.unique-avatar:hover .change-ava {
+    opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
 .photo-user {
     overflow: hidden;
@@ -122,10 +142,11 @@
     -o-border-radius:50%;
     border-radius:50%;
 }
-.link-profile {margin-left: 35px; margin-right: 35px; padding: 25px 0 25px 0; border-top: 2px dashed #f0f0f0;}
+.link-profile {margin-left: 20px; margin-right: 20px; padding: 25px 0 25px 70px; border-top: 2px dashed #f0f0f0;}
 .link-profile:nth-child(2) {border-top: none;}
 .link-profile a {color: #fff;font-size: 14px;letter-spacing: 1px;}
 .link-profile a:hover {color: #000;}
+.link-profile .tab-checked i {margin-right: 10px;}
 .active-link-profile {color: #000!important;}
 /* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ ПРОФИЛЯ 1 ВКЛАДКА */
 .profile-prompt {
@@ -504,3 +525,4 @@
     outline-offset: 0;
     box-shadow: none!important;
 }
+
