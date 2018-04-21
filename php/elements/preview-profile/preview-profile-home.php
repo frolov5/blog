@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="link-profile link-preview-profile">
-                <a href="#" class="tab-checked" data-value="content-tab-answer">
+                <a href="#" class="tab-checked" data-value="content-tab-chat">
                     <i class="fa fa-terminal" aria-hidden="true"></i>Начать диалог
                 </a>
             </div>
