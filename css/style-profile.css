@@ -114,17 +114,9 @@
 }
 /*ава с фоткой фотки*/
 .unique-avatar {
-    display: none;
     margin: auto;
     background: none;
     text-transform: uppercase;
-    overflow: hidden;
-    width: 160px;
-    height: 160px;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    -o-border-radius:50%;
-    border-radius:50%;
     position: relative;
 }
 .unique-avatar:hover .change-ava {
@@ -134,8 +126,14 @@
     transition: opacity 0.2s linear;
 }
 .photo-user {
-    overflow: hidden;
+    width: 160px;
     height: 160px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    object-fit: cover;
+
 }
 .link-profile {margin-left: 20px; margin-right: 20px; padding: 25px 0 25px 70px; border-top: 2px dashed #f0f0f0;}
 .link-profile:nth-child(2) {border-top: none;}
